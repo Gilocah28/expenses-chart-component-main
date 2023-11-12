@@ -1,0 +1,96 @@
+.middle-section{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    .topText{
+        font-size: 24px;
+        color: $Darkbrown;
+    }
+
+    .span-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 .35rem;
+
+
+        span:nth-child(1){
+            height: 20%;
+        }
+        span:nth-child(2){
+            height: 50%;
+        }
+        span:nth-child(3){
+            height: 70%;
+            background-color: $Cyan;
+        }
+        span:nth-child(4){
+            height: 40%;
+        }
+        span:nth-child(5){
+            height: 30%;
+        }
+        span:nth-child(6){
+            height: 60%;
+        }
+        span:nth-child(7){
+            height: 35%;
+        }
+
+        span{
+            width: 35px;
+            background-color: $Softred;
+            height: 40px;
+            border-radius: 5px;
+            position: relative;
+            &:hover{
+                transition: all 300ms ease-in-out;
+                cursor: pointer;
+                opacity: .7;
+                &:focus{
+                    opacity: 1;
+                }
+            }
+            
+            p{
+                display: none;
+                background-color: $Darkbrown;
+                color: white;
+                padding: .25rem;
+                border-radius: 5px;
+                font-size: 14px;
+                margin-bottom: 20rem; 
+                position: absolute;
+                top: -2rem;
+                left: -.20rem;
+                animation: fade 500ms ease-in-out;
+            }
+            @keyframes fade {
+                from{opacity: 0;}
+                to{opacity: 1;}
+            }
+        
+            
+        }
+
+    }
+
+
+    .span-date{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 .50rem;
+        margin: .50rem 0;
+        color: $Mediumbrown;
+        span{
+            font-size: 14px;
+        }
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,77 @@
+main{
+    width: 400px;
+    @include mobile{
+        margin: 0 1rem;
+    }
+
+    .top-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 15px;
+        background-color: $Softred;
+        color: $Verypaleorange;
+        margin-bottom: 1rem;
+       
+
+        p{
+            font-size: 14px;
+            color: $Cream;
+        }
+        h3{
+            font-size: 24px;
+            letter-spacing: .10em;
+            margin-top: .20rem;
+        }
+    }
+
+    .wrapper{
+        height: 400px;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 15px;
+
+        @include mobile{
+            padding: 1rem;
+        }
+        
+
+        hr{ 
+            border: .5px solid $Cream;
+        }
+
+
+        .bottom-section{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .total-section{
+                p{
+                    color: $Mediumbrown;
+                    font-size: 12px;
+                }
+                h2{
+                    font-weight: 700;
+                    font-size: 24px;
+                    letter-spacing: .10em;
+                    margin-top: .30rem;
+                }
+            }
+
+            .percent-section{
+                .ftext{
+                    color: $Darkbrown;
+                    font-weight: 700;
+                    font-size: 12px;
+                }
+                .text{
+                    color: $Mediumbrown;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
